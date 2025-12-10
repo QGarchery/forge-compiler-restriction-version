@@ -3,4 +3,12 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
+[[profile.default.compilation_restrictions]]
+paths = "src/Counter.sol"
+version = "0.8.0"
+
+[[profile.default.additional_compiler_profiles]]
+name = "fixed version 0.8.0"
+version = "0.8.0"
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
